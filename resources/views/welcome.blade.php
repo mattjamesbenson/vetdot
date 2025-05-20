@@ -11,20 +11,22 @@
 </head>
 
 <body>
-    <!-- <header class="w-full lg:max-w-4xl max-w-[335px] text-sm mb-6 not-has-[nav]:hidden">
-    </header> -->
-    <div class="flex">
-        <main class="flex">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Hey</h1>
-                </div>
-
-                <div class="col-md-6">
-                    <h1>Ho</h1>
+    <div class="flex-row">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="sidebar-content">
+                    <h3>Settings</h3>
                 </div>
             </div>
-        </main>
+
+            <div class="col-md-9 list">
+                <div class="list-content">
+                    <h1>My List</h1>
+
+                    <p>Row</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
