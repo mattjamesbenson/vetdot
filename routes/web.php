@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\TodoListController;
+use App\Http\Controllers\ListItemController;
+
+Route::resource('todo-lists', TodoListController::class);
+Route::resource('todo-lists.items', ListItemController::class);

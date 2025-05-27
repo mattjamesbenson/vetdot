@@ -22,7 +22,7 @@ export default defineConfig({
   },
   server: {
     hmr: {
-      host: 'ez-list.test',
+      host: 'vetorg.test',
       watch: {
         usePolling: true,
       },
