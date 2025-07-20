@@ -16,6 +16,30 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('diary') }}" :active="request()->routeIs('diary')">
+                    {{ __('Diary') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('my-cases') }}" :active="request()->routeIs('my-cases')">
+                        {{ __('My Cases') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('all-cases') }}" :active="request()->routeIs('all-cases')">
+                        {{ __('All Cases') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('general-advice') }}" :active="request()->routeIs('general-advice')">
+                    {{ __('General Advice') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">

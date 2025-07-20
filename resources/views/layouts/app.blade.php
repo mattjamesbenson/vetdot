@@ -12,10 +12,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-        <!-- Styles -->
-        @livewireStyles
+        @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
         <x-banner />
@@ -39,7 +36,8 @@
         </div>
 
         @stack('modals')
-
+        @stack('scripts')
+        
         @livewireScripts
     </body>
 </html>
