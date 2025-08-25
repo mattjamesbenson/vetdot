@@ -32,6 +32,11 @@
         </x-modal>
     </div>
 
+    <div id="calendar"></div>
+</div>
+@endsection
+
+
     @push('scripts')
         <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
     @endpush

@@ -21,6 +21,6 @@
     },
     "dependencies": {
         "bootstrap": "^5.3.6",
-        "fullcalendar": "^6.1.17"
+        "fullcalendar": "^6.1.18"
     }
 }

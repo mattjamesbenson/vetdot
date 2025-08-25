@@ -1,57 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "bootstrap/scss/bootstrap";
 
-@layer components {
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
 
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        font-family: 'Helvetica Neue', sans-serif;
-    }
+.container-fluid {
+    height: 100vh;
 
-    .container-fluid {
-        height: 100vh;
+    a .row {
+        .sidebar {
+            background-color: #f1f3f5;
 
-        a .row {
-            .sidebar {
+            .sidebar-content {
+                padding: 20px;
+            }
+        }
+
+        .list {
+            background-color: #ffffff;
+            padding: 0 !important;
+
+            .list-header {
                 background-color: #f1f3f5;
-
-                .sidebar-content {
-                    padding: 20px;
-                }
             }
 
-            .list {
-                background-color: #ffffff;
-                padding: 0 !important;
+            .list-content {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
 
-                .list-header {
-                    background-color: #f1f3f5;
-                }
+                    li {
+                        transition: background-color 0.3s;
+                        cursor: pointer;
 
-                .list-content {
-                    ul {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
+                        &:hover {
+                            background-color: #f8f9fa;
+                        }
 
-                        li {
-                            transition: background-color 0.3s;
-                            cursor: pointer;
-
-                            &:hover {
-                                background-color: #f8f9fa;
-                            }
-
-                            .badge {
-                                font-size: 0.75rem;
-                            }
+                        .badge {
+                            font-size: 0.75rem;
                         }
                     }
                 }
             }
         }
+    }
+}
+
+nav {
+    max-height: 100px;
+
+    .nav-item {
+        margin: 0 10px;
     }
 }
